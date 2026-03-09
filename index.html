@@ -1,0 +1,527 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisamudheen K A | Full-Stack Flutter Developer</title>
+    <meta name="description"
+        content="Portfolio of Nisamudheen K A, a Full-Stack Flutter Developer with 1+ years of experience in building real-time mobile applications like QuickBus.">
+    <!-- Google Fonts: Inter & Montserrat -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'flutter-blue': '#02569B',
+                        'flutter-sky': '#0175C2',
+                        'slate-950': '#020617',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(2, 86, 155, 0.15), transparent),
+                radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.1), transparent);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .flutter-gradient {
+            background: linear-gradient(135deg, #02569B 0%, #0175C2 100%);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-slate-300 font-sans selection:bg-flutter-blue/30 selection:text-white overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-display font-extrabold tracking-tighter text-white">
+                NISAM<span class="text-flutter-blue">.</span>DEV
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium uppercase tracking-widest">
+                <a href="#about" class="text-slate-400 hover:text-white transition-colors">About</a>
+                <a href="#experience" class="text-slate-400 hover:text-white transition-colors">Experience</a>
+                <a href="#skills" class="text-slate-400 hover:text-white transition-colors">Skills</a>
+                <a href="#projects" class="text-slate-400 hover:text-white transition-colors">Projects</a>
+                <a href="https://wa.me/919072053712" target="_blank"
+                    class="bg-white text-slate-950 px-6 py-2.5 rounded-full font-bold hover:bg-flutter-blue hover:text-white transition-all transform hover:scale-105 active:scale-95">
+                    REACH OUT
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle (Simplified) -->
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 px-6 hero-gradient overflow-hidden">
+        <!-- Floating Elements Background -->
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+            <div class="absolute top-1/4 left-10 w-64 h-64 bg-flutter-blue rounded-full blur-[120px] animate-pulse">
+            </div>
+            <div class="absolute bottom-1/4 right-10 w-64 h-64 bg-emerald-500 rounded-full blur-[120px] animate-pulse"
+                style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10 w-full">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div
+                    class="inline-flex items-center space-x-2 bg-slate-900/50 border border-slate-800 px-4 py-2 rounded-full mb-6">
+                    <span class="relative flex h-3 w-3">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    </span>
+                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Available for new
+                        projects</span>
+                </div>
+                <h1 class="text-5xl md:text-8xl font-display font-extrabold mb-8 leading-[1.1]">
+                    <span class="text-gradient">Nisamudheen K A</span>
+                </h1>
+                <p class="text-xl md:text-2xl font-light text-slate-400 mb-10 max-w-xl leading-relaxed">
+                    Senior Full-Stack <span class="text-white font-medium">Flutter Developer</span> building
+                    high-performance mobile ecosystems & real-time backends.
+                </p>
+                <div class="flex flex-wrap gap-5">
+                    <a href="#projects"
+                        class="flutter-gradient text-white px-10 py-4 rounded-xl font-bold hover:shadow-[0_0_30px_-5px_#02569B] transition-all transform hover:-translate-y-1">
+                        Explore Work
+                    </a>
+                    <a href="mailto:nisamudheenka7@gmail.com"
+                        class="bg-slate-900 text-white border border-slate-800 px-10 py-4 rounded-xl font-bold hover:bg-slate-800 transition-all">
+                        Let's Talk
+                    </a>
+                </div>
+                <!-- Mini Social Links -->
+                <div class="mt-12 flex space-x-6">
+                    <a href="https://github.com" class="text-slate-500 hover:text-white transition-colors text-xl"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" class="text-slate-500 hover:text-white transition-colors text-xl"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/919072053712"
+                        class="text-slate-500 hover:text-white transition-colors text-xl"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="relative hidden md:block" data-aos="zoom-in" data-aos-duration="1200">
+                <div
+                    class="relative z-10 w-[450px] h-[450px] mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                    <!-- Placeholder/Abstract Image Representing Flutter -->
+                    <div class="absolute inset-0 flutter-gradient opacity-20"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <i class="fab fa-flutter text-[180px] text-white opacity-40 animate-bounce"
+                            style="animation-duration: 3s;"></i>
+                    </div>
+                </div>
+                <!-- Tech Badge -->
+                <div class="absolute -bottom-6 -right-6 bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-2xl z-20 animate-bounce"
+                    style="animation-duration: 5s;">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-flutter-blue/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-code text-flutter-blue text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Experience</p>
+                            <p class="text-xl font-display font-extrabold text-white">1+ Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6 bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-flutter-blue font-bold uppercase tracking-[0.2em] mb-4 block">The Mission</span>
+                    <h2 class="text-4xl md:text-5xl font-display font-extrabold mb-8 text-white leading-tight">
+                        Bridging UI Artistry with Backend Precision.
+                    </h2>
+                    <p class="text-lg text-slate-400 mb-6 leading-relaxed">
+                        I am a dedicated <span class="text-white">Flutter Developer</span> based in Kerala, India, with
+                        a Master's in Computer Applications (MCA). This academic background allows me to think beyond
+                        the pixels, focusing on scalable architecture and efficient backend logic.
+                    </p>
+                    <p class="text-lg text-slate-400 mb-10 leading-relaxed">
+                        During my tenure at <span class="text-white">Securebook Technologies</span>, I specialized in
+                        building real-time mobile applications that solve tangible problems. From GPS integration to
+                        complex payment gateways, I thrive on technical challenges.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-3xl font-bold text-white mb-2">MCA</h4>
+                            <p class="text-sm text-slate-500 uppercase tracking-widest">Post Graduation</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-bold text-white mb-2">12+ Mo.</h4>
+                            <p class="text-sm text-slate-500 uppercase tracking-widest">Flutter Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-left">
+                    <div class="space-y-4">
+                        <div
+                            class="h-48 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center group hover:bg-flutter-blue/10 transition-colors">
+                            <i
+                                class="fab fa-laravel text-4xl text-slate-700 group-hover:text-red-500 transition-colors"></i>
+                        </div>
+                        <div
+                            class="h-64 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center group hover:bg-flutter-blue/10 transition-colors">
+                            <i
+                                class="fab fa-python text-5xl text-slate-700 group-hover:text-amber-400 transition-colors"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-12">
+                        <div
+                            class="h-64 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center group hover:bg-flutter-blue/10 transition-colors">
+                            <i
+                                class="fab fa-google text-5xl text-slate-700 group-hover:text-flutter-sky transition-colors"></i>
+                        </div>
+                        <div
+                            class="h-48 bg-slate-900 rounded-3xl border border-slate-800 flex items-center justify-center group hover:bg-flutter-blue/10 transition-colors">
+                            <i
+                                class="fas fa-map-marker-alt text-4xl text-slate-700 group-hover:text-red-500 transition-colors"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-32 px-6 border-y border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-display font-extrabold text-white mb-6">Career Journey</h2>
+                <div class="w-20 h-1.5 bg-flutter-blue mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto relative border-l-2 border-slate-800 ml-4 md:ml-auto">
+                <!-- Securebook Technologies -->
+                <div class="mb-20 ml-10 relative" data-aos="fade-left">
+                    <div
+                        class="absolute -left-[51px] top-0 w-10 h-10 bg-slate-950 border-4 border-flutter-blue rounded-full flex items-center justify-center">
+                        <i class="fas fa-briefcase text-flutter-blue text-xs"></i>
+                    </div>
+                    <div
+                        class="bg-slate-900 p-8 rounded-3xl border border-slate-800 hover:border-flutter-blue/50 transition-colors group">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+                            <div>
+                                <h3
+                                    class="text-2xl font-bold text-white group-hover:text-flutter-blue transition-colors">
+                                    Flutter Developer</h3>
+                                <p class="text-slate-400 font-medium">Securebook Technologies Pvt Ltd</p>
+                            </div>
+                            <span
+                                class="mt-2 md:mt-0 bg-flutter-blue/10 text-flutter-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+                                2024 - Present
+                            </span>
+                        </div>
+                        <ul class="space-y-4 text-slate-400 leading-relaxed">
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-flutter-blue mt-1.5 mr-3 text-xs"></i>
+                                Developed and maintained real-time mobile applications using Flutter and Firebase.
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-flutter-blue mt-1.5 mr-3 text-xs"></i>
+                                Integrated REST APIs, complex payment gateways (Razorpay), and Google Maps services.
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chevron-right text-flutter-blue mt-1.5 mr-3 text-xs"></i>
+                                Optimized app performance and UI responsiveness for a seamless user experience.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20" data-aos="fade-right">
+                <span class="text-emerald-500 font-bold uppercase tracking-[0.2em] mb-4 block">Technical Stack</span>
+                <h2 class="text-4xl md:text-5xl font-display font-extrabold text-white">Full-Stack Capability.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Mobile Development -->
+                <div class="p-8 bg-slate-900 rounded-[2rem] border border-slate-800 hover:shadow-[0_20px_40px_-15px_rgba(2,86,155,0.3)] transition-all group"
+                    data-aos="fade-up">
+                    <div
+                        class="w-14 h-14 bg-flutter-blue/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-mobile-alt text-flutter-blue text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-6">Mobile Development</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Flutter</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Dart</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Firebase</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Google
+                            Maps</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Push
+                            Notifications</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="p-8 bg-slate-900 rounded-[2rem] border border-slate-800 hover:shadow-[0_20px_40px_-15px_rgba(239,68,68,0.2)] transition-all group"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-14 h-14 bg-red-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-server text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-6">Backend & API</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Laravel</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">PHP</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Django</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">REST
+                            APIs</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Auth
+                            Systems</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Database -->
+                <div class="p-8 bg-slate-900 rounded-[2rem] border border-slate-800 hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.2)] transition-all group"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-database text-emerald-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-6">Tools & Data</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">MySQL</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Firestore</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Git</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">Razorpay</span>
+                        <span
+                            class="bg-slate-950 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-400">VS
+                            Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-32 px-6 bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20" data-aos="fade-up">
+                <span class="text-flutter-blue font-bold uppercase tracking-[0.2em] mb-4 block">Featured Work</span>
+                <h2 class="text-4xl md:text-5xl font-display font-extrabold text-white">Innovation in Motion.</h2>
+            </div>
+
+            <div class="bg-slate-900 rounded-[3rem] border border-slate-800 overflow-hidden shadow-2xl group"
+                data-aos="zoom-in">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Project Details -->
+                    <div class="lg:w-1/2 p-12 lg:p-20">
+                        <div class="inline-flex items-center space-x-3 mb-8">
+                            <i class="fas fa-bus text-flutter-blue text-2xl"></i>
+                            <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Logistics &
+                                Transportation</span>
+                        </div>
+                        <h3
+                            class="text-4xl md:text-5xl font-display font-extrabold text-white mb-8 group-hover:text-flutter-blue transition-colors">
+                            QuickBus</h3>
+                        <p class="text-lg text-slate-400 mb-10 leading-relaxed">
+                            A high-performance ecosystem for bus ticket booking and live GPS tracking. Designed to
+                            revolutionize private transportation with real-time accuracy and seamless payments.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-6 mb-12">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-red-500"></i>
+                                </div>
+                                <span class="text-sm font-medium text-slate-300">Live GPS Tracking</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-wallet text-emerald-500"></i>
+                                </div>
+                                <span class="text-sm font-medium text-slate-300">Wallet System</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-credit-card text-blue-500"></i>
+                                </div>
+                                <span class="text-sm font-medium text-slate-300">Razorpay Pay</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-bell text-amber-500"></i>
+                                </div>
+                                <span class="text-sm font-medium text-slate-300">Push Notifications</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="bg-slate-800 text-slate-300 px-4 py-1.5 rounded-full text-xs font-bold">Flutter</span>
+                            <span
+                                class="bg-slate-800 text-slate-300 px-4 py-1.5 rounded-full text-xs font-bold">Firebase</span>
+                            <span class="bg-slate-800 text-slate-300 px-4 py-1.5 rounded-full text-xs font-bold">Google
+                                Maps API</span>
+                            <span
+                                class="bg-slate-800 text-slate-300 px-4 py-1.5 rounded-full text-xs font-bold">SharedPreferences</span>
+                        </div>
+                    </div>
+                    <!-- Mockup Display -->
+                    <div
+                        class="lg:w-1/2 bg-flutter-blue/5 flex items-center justify-center p-12 lg:p-20 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-flutter-blue opacity-5"></div>
+                        <!-- Phone Mockup -->
+                        <div
+                            class="relative w-64 h-[500px] bg-slate-800 rounded-[3rem] border-8 border-slate-950 shadow-2xl overflow-hidden animate-float">
+                            <div class="absolute top-0 w-full h-8 bg-slate-950 flex items-center justify-center">
+                                <div class="w-16 h-1 bg-slate-800 rounded-full"></div>
+                            </div>
+                            <div class="h-full pt-10 px-4">
+                                <div
+                                    class="w-full h-32 bg-slate-900 border border-slate-700 rounded-2xl mb-4 animate-pulse">
+                                </div>
+                                <div class="w-full h-12 bg-flutter-blue/20 rounded-xl mb-3"></div>
+                                <div class="w-3/4 h-12 bg-slate-900 rounded-xl mb-3"></div>
+                                <div class="grid grid-cols-4 gap-2">
+                                    <div class="h-10 bg-slate-900 rounded-lg"></div>
+                                    <div class="h-10 bg-slate-900 rounded-lg"></div>
+                                    <div class="h-10 bg-slate-900 rounded-lg"></div>
+                                    <div class="h-10 bg-slate-900 rounded-lg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="pt-32 pb-12 px-6 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-end mb-24">
+                <div data-aos="fade-right">
+                    <h2 class="text-5xl md:text-7xl font-display font-extrabold text-white mb-8 leading-tight">
+                        Let's build the <span class="text-flutter-blue">future</span> together.
+                    </h2>
+                    <p class="text-xl text-slate-400 mb-10 max-w-lg">
+                        Currently available for freelance opportunities and innovative role positions.
+                    </p>
+                    <a href="mailto:nisamudheenka7@gmail.com"
+                        class="text-3xl font-display font-bold text-white hover:text-flutter-blue transition-colors border-b-2 border-flutter-blue pb-2 inline-block">
+                        nisamudheenka7@gmail.com
+                    </a>
+                </div>
+                <div class="flex flex-col items-start md:items-end" data-aos="fade-left">
+                    <div class="flex space-x-8 mb-12">
+                        <a href="https://github.com"
+                            class="text-slate-500 hover:text-white transition-colors text-3xl"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com"
+                            class="text-slate-500 hover:text-white transition-colors text-3xl"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/919072053712"
+                            class="text-slate-500 hover:text-white transition-colors text-3xl"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-slate-500 font-bold uppercase tracking-widest text-xs mb-2">Location</p>
+                        <p class="text-white font-medium">Kerala, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="pt-12 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                <p>&copy; 2026 Nisamudheen K A. Built with precision.</p>
+                <div class="flex space-x-8 mt-6 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+
+</html>
